@@ -1,0 +1,24 @@
+.seat {
+    width: 35px;
+    height: 35px;
+    margin: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.free {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.free:hover {
+    background: #218838;
+}
+
+.occupied {
+    background: #dc3545;
+    color: white;
+}

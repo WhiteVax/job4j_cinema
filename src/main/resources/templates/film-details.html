@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout(~{::content})}">
+<body>
+<section th:fragment="content">
+    <div class="bg-white border rounded p-4">
+        <h2 th:text="${film.name}">Фильм</h2>
+        <p class="text-muted">
+            <span th:text="${film.year}">2026</span>,
+            <span th:text="${film.genre}">Жанр</span>,
+            <span th:text="${film.durationInMinutes}">120</span> мин,
+            <span th:text="${film.minimalAge}">12</span>+
+        </p>
+        <p th:text="${film.description}">Описание фильма</p>
+        <a class="btn btn-primary" th:href="@{/sessions}">Смотреть сеансы</a>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout(~{::content})}">
+<body>
+<section th:fragment="content">
+    <div class="alert alert-success">
+        <h2 class="h4">Билет успешно куплен</h2>
+        <p class="mb-0">
+            Вы приобрели билет на фильм
+            <b th:text="${ticket.filmName}">Фильм</b>,
+            <span th:text="${ticket.hallName}">зал</span>,
+            ряд <span th:text="${ticket.rowNumber}">1</span>,
+            место <span th:text="${ticket.placeNumber}">1</span>.
+        </p>
+    </div>
+    <a class="btn btn-primary" th:href="@{/sessions}">Вернуться к расписанию</a>
+</section>
+</body>
+</html>

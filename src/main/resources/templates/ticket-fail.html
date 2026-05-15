@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout(~{::content})}">
+<body>
+<section th:fragment="content">
+    <div class="alert alert-danger">
+        <h2 class="h4">Не удалось купить билет</h2>
+        <p class="mb-0">
+            Вероятно, выбранное место уже занято. Перейдите на страницу бронирования
+            билетов и попробуйте снова.
+        </p>
+    </div>
+    <a class="btn btn-primary" th:href="@{/sessions}">Выбрать другой сеанс</a>
+</section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout(~{::content})}">
+<body>
+<section th:fragment="content">
+    <div class="bg-white border rounded p-4">
+        <h2 th:text="${filmSession.filmName}">Фильм</h2>
+        <p class="text-muted">
+            <span th:text="${filmSession.hallName}">Зал</span>,
+            <span th:text="${#temporals.format(filmSession.startTime, 'dd.MM.yyyy HH:mm')}">
+                дата
+            </span>,
+            <span th:text="${filmSession.price}">0</span> руб.
+        </p>
+        <p th:text="${filmSession.filmDescription}">Описание</p>
+        <form th:action="@{/tickets/buy}" method="post" class="row gy-3">
+            <input type="hidden" name="sessionId" th:value="${filmSession.id}">
+            <div class="col-md-4">
+                <label class="form-label" for="rowNumber">Ряд</label>
+                <select id="rowNumber" name="rowNumber" class="form-select" required>
+                    <option th:each="row : ${#numbers.sequence(1, filmSession.rowCount)}"
+                            th:value="${row}" th:text="${row}">1</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label" for="placeNumber">Место</label>
+                <select id="placeNumber" name="placeNumber" class="form-select" required>
+                    <option th:each="place : ${#numbers.sequence(1, filmSession.placeCount)}"
+                            th:value="${place}" th:text="${place}">1</option>
+                </select>
+            </div>
+            <div class="col-12 d-flex gap-2">
+                <button class="btn btn-success">Купить</button>
+                <a class="btn btn-outline-secondary" th:href="@{/sessions}">Отменить</a>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>

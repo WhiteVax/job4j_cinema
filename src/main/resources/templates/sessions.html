@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout(~{::content})}">
+<body>
+<section th:fragment="content">
+    <h2 class="mb-4">Расписание</h2>
+    <div class="list-group">
+        <a class="list-group-item list-group-item-action"
+           th:each="s : ${sessions}"
+           th:href="@{/sessions/{id}(id=${s.id})}">
+            <div class="d-flex justify-content-between gap-3">
+                <div>
+                    <h5 class="mb-1" th:text="${s.filmName}">Фильм</h5>
+                    <div class="text-muted">
+                        <span th:text="${s.hallName}">Зал</span>,
+                        <span th:text="${#temporals.format(s.startTime, 'dd.MM.yyyy HH:mm')}">
+                            дата
+                        </span>
+                    </div>
+                </div>
+                <strong><span th:text="${s.price}">0</span> руб.</strong>
+            </div>
+        </a>
+    </div>
+</section>
+</body>
+</html>
