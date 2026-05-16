@@ -9,7 +9,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import ru.cinema.dto.TicketDto;
 import ru.cinema.model.Ticket;
 import ru.cinema.model.User;
-import ru.cinema.service.TicketService;
+import ru.cinema.service.ticket.TicketService;
 
 import java.util.Optional;
 

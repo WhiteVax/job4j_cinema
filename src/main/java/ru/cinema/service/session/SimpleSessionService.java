@@ -1,12 +1,12 @@
-package ru.cinema.service;
+package ru.cinema.service.session;
 
 import org.springframework.stereotype.Service;
 import ru.cinema.dto.SessionDto;
 import ru.cinema.model.Film;
 import ru.cinema.model.FilmSession;
-import ru.cinema.repository.FilmRepository;
-import ru.cinema.repository.FilmSessionRepository;
-import ru.cinema.repository.HallRepository;
+import ru.cinema.repository.film.FilmRepository;
+import ru.cinema.repository.filmsession.FilmSessionRepository;
+import ru.cinema.repository.hall.HallRepository;
 
 import java.util.List;
 import java.util.Optional;

@@ -4,7 +4,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.cinema.dto.TicketDto;
 import ru.cinema.model.Ticket;
-import ru.cinema.repository.TicketRepository;
+import ru.cinema.repository.ticket.TicketRepository;
+import ru.cinema.service.ticket.SimpleTicketService;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package ru.cinema.service;
+package ru.cinema.service.session;
 
 import ru.cinema.dto.SessionDto;
 

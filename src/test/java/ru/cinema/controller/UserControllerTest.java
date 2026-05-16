@@ -6,7 +6,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import ru.cinema.model.User;
-import ru.cinema.service.UserService;
+import ru.cinema.service.user.UserService;
 
 import java.util.Optional;
 

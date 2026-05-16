@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.cinema.model.Ticket;
 import ru.cinema.model.User;
-import ru.cinema.service.TicketService;
+import ru.cinema.service.ticket.TicketService;
 
 @Controller
 @RequestMapping("/tickets")

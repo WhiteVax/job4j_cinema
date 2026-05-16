@@ -6,7 +6,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import ru.cinema.dto.SessionDto;
-import ru.cinema.service.SessionService;
+import ru.cinema.service.session.SessionService;
 
 import java.util.List;
 import java.util.Optional;

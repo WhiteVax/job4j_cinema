@@ -1,8 +1,8 @@
-package ru.cinema.service;
+package ru.cinema.service.user;
 
 import org.springframework.stereotype.Service;
 import ru.cinema.model.User;
-import ru.cinema.repository.UserRepository;
+import ru.cinema.repository.user.UserRepository;
 
 import java.util.Optional;
 

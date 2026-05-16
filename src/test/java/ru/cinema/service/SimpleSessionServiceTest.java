@@ -5,9 +5,10 @@ import org.junit.jupiter.api.Test;
 import ru.cinema.model.Film;
 import ru.cinema.model.FilmSession;
 import ru.cinema.model.Hall;
-import ru.cinema.repository.FilmRepository;
-import ru.cinema.repository.FilmSessionRepository;
-import ru.cinema.repository.HallRepository;
+import ru.cinema.repository.film.FilmRepository;
+import ru.cinema.repository.filmsession.FilmSessionRepository;
+import ru.cinema.repository.hall.HallRepository;
+import ru.cinema.service.session.SimpleSessionService;
 
 import java.time.LocalDateTime;
 import java.util.List;

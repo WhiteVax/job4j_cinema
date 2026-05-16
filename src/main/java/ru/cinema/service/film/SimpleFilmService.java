@@ -1,13 +1,13 @@
-package ru.cinema.service;
+package ru.cinema.service.film;
 
 import org.springframework.stereotype.Service;
 import ru.cinema.dto.FilmDto;
 import ru.cinema.model.File;
 import ru.cinema.model.Film;
 import ru.cinema.model.Genre;
-import ru.cinema.repository.FileRepository;
-import ru.cinema.repository.FilmRepository;
-import ru.cinema.repository.GenreRepository;
+import ru.cinema.repository.file.FileRepository;
+import ru.cinema.repository.film.FilmRepository;
+import ru.cinema.repository.genre.GenreRepository;
 
 import java.util.List;
 import java.util.Optional;

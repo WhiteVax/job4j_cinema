@@ -3,7 +3,8 @@ package ru.cinema.service;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.cinema.model.User;
-import ru.cinema.repository.UserRepository;
+import ru.cinema.repository.user.UserRepository;
+import ru.cinema.service.user.SimpleUserService;
 
 import java.util.Optional;
 

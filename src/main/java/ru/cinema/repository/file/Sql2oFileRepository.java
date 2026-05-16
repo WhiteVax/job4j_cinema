@@ -1,4 +1,4 @@
-package ru.cinema.repository;
+package ru.cinema.repository.file;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

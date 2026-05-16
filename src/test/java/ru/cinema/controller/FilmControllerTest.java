@@ -6,7 +6,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import ru.cinema.dto.FilmDto;
-import ru.cinema.service.FilmService;
+import ru.cinema.service.film.FilmService;
 
 import java.util.List;
 import java.util.Optional;

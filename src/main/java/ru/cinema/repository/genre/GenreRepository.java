@@ -1,4 +1,4 @@
-package ru.cinema.repository;
+package ru.cinema.repository.genre;
 
 import ru.cinema.model.Genre;
 

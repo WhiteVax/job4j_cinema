@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.cinema.model.User;
-import ru.cinema.service.UserService;
+import ru.cinema.service.user.UserService;
 
 @Controller
 @RequestMapping("/users")

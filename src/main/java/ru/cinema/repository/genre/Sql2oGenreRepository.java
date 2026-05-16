@@ -1,4 +1,4 @@
-package ru.cinema.repository;
+package ru.cinema.repository.genre;
 
 import org.springframework.stereotype.Repository;
 import org.sql2o.Sql2o;
