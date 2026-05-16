@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.sql2o.Sql2o;
 import ru.cinema.model.Ticket;
+import ru.cinema.repository.ticket.Sql2oTicketRepository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

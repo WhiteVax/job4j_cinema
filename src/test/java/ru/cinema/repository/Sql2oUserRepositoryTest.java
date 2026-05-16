@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.sql2o.Sql2o;
 import ru.cinema.configuration.DatasourceConfiguration;
 import ru.cinema.model.User;
+import ru.cinema.repository.user.Sql2oUserRepository;
 
 import java.util.Optional;
 import java.util.Properties;

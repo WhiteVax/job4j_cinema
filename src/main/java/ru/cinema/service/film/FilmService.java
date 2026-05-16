@@ -1,4 +1,4 @@
-package ru.cinema.service;
+package ru.cinema.service.film;
 
 import ru.cinema.dto.FilmDto;
 

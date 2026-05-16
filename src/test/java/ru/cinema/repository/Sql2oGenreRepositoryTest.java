@@ -4,6 +4,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.sql2o.Sql2o;
+import ru.cinema.repository.genre.Sql2oGenreRepository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

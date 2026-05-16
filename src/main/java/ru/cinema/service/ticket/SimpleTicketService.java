@@ -1,9 +1,9 @@
-package ru.cinema.service;
+package ru.cinema.service.ticket;
 
 import org.springframework.stereotype.Service;
 import ru.cinema.dto.TicketDto;
 import ru.cinema.model.Ticket;
-import ru.cinema.repository.TicketRepository;
+import ru.cinema.repository.ticket.TicketRepository;
 
 import java.util.List;
 import java.util.Optional;

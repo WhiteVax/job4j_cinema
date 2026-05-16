@@ -1,4 +1,4 @@
-package ru.cinema.repository;
+package ru.cinema.repository.file;
 
 import ru.cinema.model.File;
 

@@ -1,4 +1,4 @@
-package ru.cinema.repository;
+package ru.cinema.repository.hall;
 
 import ru.cinema.model.Hall;
 
